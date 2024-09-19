@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hosni, Ftoohi, Samti, and Kouki family profiles">
+    <title>Hosni Family Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            font-family: 'Lora', serif;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        .family-section {
+            padding: 40px 0;
+        }
+
+        .family-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .family-member {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .family-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .family-member img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .family-member h3 {
+            margin: 15px 0;
+            font-size: 22px;
+        }
+
+        .family-member p {
+            font-size: 16px;
+            padding: 0 10px 15px 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Button back to top */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* Style for each family section */
+        .hosni-section {
+            background-color: #e6f2ff;
+        }
+
+        .ftoohi-section {
+            background-color: #fff5e6;
+        }
+
+        .samti-section {
+            background-color: #f9e6f2;
+        }
+
+        .kouki-section {
+            background-color: #e6ffe6;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            padding: 10px 0;
+            margin: 0;
+            font-family: 'Lora', serif;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .family-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .family-member {
+                width: 90%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Hosni Family</h1>
+    <p>Welcome to the family website! Learn more about the members of each family.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#hosni">Hosni Family</a></li>
+        <li><a href="#ftoohi">Ftoohi Family</a></li>
+        <li><a href="#samti">Samti Family</a></li>
+        <li><a href="#kouki">Kouki Family</a></li>
+    </ul>
+</nav>
+
+<!-- Hosni Family Section -->
+<section class="family-section hosni-section" id="hosni">
+    <h2>Hosni Family</h2>
+    <div class="family-container">
+        <div class="family-member">
+            <img src="images/rachid_hosni.jpg" alt="Rachid Hosni">
+            <h3>Rachid Hosni</h3>
+            <p>Retired from the Tunisian National Army.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/wiem_hosni.jpg" alt="Wiem Hosni">
+            <h3>Wiem Hosni</h3>
+            <p>Still studying.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/rayan_hosni.jpg" alt="Rayan Hosni">
+            <h3>Rayan Hosni</h3>
+            <p>[a ingenieur in informatique ]</p>
+        </div>
+        <div class="family-member">
+            <img src="images/malika_hosni.jpg" alt="Malika Hosni">
+            <h3>Malika Hosni</h3>
+            <p>Currently working.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/wael_hosni.jpg" alt="Wael Hosni">
+            <h3>Wael Hosni</h3>
+            <p>[Description]</p>
+        </div>
+    </div>
+</section>
+
+<!-- Ftoohi Family Section -->
+<section class="family-section ftoohi-section" id="ftoohi">
+    <h2>Ftoohi Family</h2>
+    <div class="family-container">
+        <div class="family-member">
+            <img src="images/ahlam_ftoohi.jpg" alt="Ahlam Ftoohi">
+            <h3>Ahlam Ftoohi</h3>
+            <p>A housewife and artist.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/radhwan_ftoohi.jpg" alt="Radhwan Ftoohi">
+            <h3>Radhwan Ftoohi</h3>
+            <p>Still studying.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/rowan_ftoohi.jpg" alt="Rowan Ftoohi">
+            <h3>Rowan Ftoohi</h3>
+            <p>Currently studying.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/raslan_miftouhi.jpg" alt="Raslan ftouhi">
+            <h3>Raslan ftouhi</h3>
+            <p>[still studiying]</p>
+        </div>
+    </div>
+</section>
+
+<!-- Samti Family Section -->
+<section class="family-section samti-section" id="samti">
+    <h2>Samti Family</h2>
+    <div class="family-container">
+        <div class="family-member">
+            <img src="images/ayoub_samti.jpg" alt="Ayoub Samti">
+            <h3>Ayoub Samti</h3>
+            <p>Still studying.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/arbi_samti.jpg" alt="Arbi Samti">
+            <h3>Arbi Samti</h3>
+            <p>Works for the Tunisian National Army.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/rim_samti.jpg" alt="Rim Samti">
+            <h3>Rim Samti</h3>
+            <p>A housewife.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/arij_samti.jpg" alt="Arij Samti">
+            <h3>Arij Samti</h3>
+            <p>Currently studying.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/adam_samti.jpg" alt="Adam Samti">
+            <h3>Adam Samti</h3>
+            <p>Still studying.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Kouki Family Section -->
+<section class="family-section kouki-section" id="kouki">
+    <h2>Kouki Family</h2>
+    <div class="family-container">
+        <div class="family-member">
+            <img src="images/hbiba_kouki.jpg" alt="Hbiba Kouki">
+            <h3>Hbiba Kouki</h3>
+            <p>A housewife.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/amer_kouki.jpg" alt="Amer Kouki">
+            <h3>Amer Kouki</h3>
+            <p>A taxi driver.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/imad_kouki.jpg" alt="Imad Kouki">
+            <h3>Imad Kouki</h3>
+            <p>Works in France.</p>
+        </div>
+        <div class="family-member">
+            <img src="images/mouhamed_kouki.jpg" alt="Mouhamed Kouki">
+            <h3>Mouhamed Kouki</h3>
+            <p>Working in general trades.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Hosni Family Website. All rights reserved.</p>
+</footer>
+
+<!-- Button back to top -->
+<button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+    var btn = document.getElementById("back-to-top");
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+    btn.onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
+
+</body>
+</html>
